@@ -98,11 +98,16 @@ textarea {
    Author's custom styles
    ========================================================================== */
 /* -------------------- Base Header - Footer Styles -------------------- */
+body {
+  width: 100%;
+}
+
 header, footer {
   display: flex;
   justify-content: center;
   align-items: center;
   flex-flow: row wrap;
+  width: 100%;
 }
 
 header .content-wrapper {
@@ -112,17 +117,63 @@ header .content-wrapper {
   flex-flow: row wrap;
 }
 
+header img {
+  width: 60%;
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  padding: 15px 0;
+}
+
 header nav {
   display: flex;
   justify-content: space-around;
   align-items: center;
   flex-flow: row wrap;
+  width: 40%;
 }
 
 header nav ul {
   list-style: none;
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
+  width: 55%;
+}
+
+header nav ul li {
+  display: flex;
+  justify-content: space-between;
+}
+
+footer .content-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: row wrap;
+  width: 40%;
+}
+
+footer .footer-content {
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: row wrap;
+}
+
+footer .social {
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  flex-flow: row wrap;
+  width: 70%;
+}
+
+footer .social-icons {
+  display: flex;
+  justify-content: space-between;
+  flex-flow: row wrap;
+  width: 100%;
 }
 
 /* -------------------- MOBILE STYLES - Homepage -------------------- */
@@ -133,6 +184,13 @@ header nav ul {
   display: flex;
   justify-content: center;
   flex-flow: row wrap;
+  width: 100%;
+}
+
+.hero-area .content-wrapper {
+  width: 90%;
+  display: flex; 
+  justify-content: flex-start;
 }
 
 /* Newsletter */
@@ -143,6 +201,13 @@ header nav ul {
   flex-flow: row wrap;
 }
 
+.newsletter .content-wrapper {
+  width: 90%;
+  display: flex; 
+  justify-content: flex-start;
+  flex-flow: row wrap;
+}
+
 /* Features */
 .features {
   display: flex;
@@ -150,11 +215,30 @@ header nav ul {
   flex-flow: row wrap;
 }
 
+.features .content-wrapper {
+  width: 90%;
+  display: flex; 
+  justify-content: center;
+  flex-flow: row wrap;
+}
+
+.features h1 {
+  justify-content: flex-start;
+}
+
 .features .feature-items {
   display: flex;
   justify-content: center;
   align-items: center;
-  flex-flow: row wrap; 
+  flex-flow: column wrap; 
+  width: 55%;
+}
+
+.feature-icon-description {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: row wrap;
 }
 
 /* Reviews */
@@ -162,6 +246,17 @@ header nav ul {
   display: flex;
   justify-content: center;
   flex-flow: row wrap;
+}
+
+.reviews .content-wrapper {
+  width: 90%;
+  display: flex; 
+  justify-content: flex-start;
+  flex-flow: row wrap;
+}
+
+.reviews img {
+  width: 100%;
 }
 
 /* -------------------- MOBILE STYLES - About Page -------------------- */
@@ -174,6 +269,13 @@ header nav ul {
   flex-flow: row wrap;
 }
 
+.mission .content-wrapper {
+  width: 90%;
+  display: flex; 
+  justify-content: flex-start;
+  flex-flow: row wrap;
+}
+
 /* Contact */
 .contact-section {
   display: flex;
@@ -182,7 +284,14 @@ header nav ul {
   flex-flow: row wrap;
 }
 
-/* -------------------- MOBILE STYLES - About Page -------------------- */
+.contact-section .content-wrapper {
+  width: 90%;
+  display: flex; 
+  justify-content: flex-start;
+  flex-flow: row wrap;
+}
+
+/* -------------------- MOBILE STYLES - FAQ's Page -------------------- */
 
 /* FAQ'S */
 .faqs {
@@ -193,9 +302,9 @@ header nav ul {
 }
 
 .faqs .content-wrapper {
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  width: 90%;
+  display: flex; 
+  justify-content: flex-start;
   flex-flow: row wrap;
 }
 
