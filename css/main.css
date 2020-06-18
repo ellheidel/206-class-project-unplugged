@@ -567,14 +567,15 @@
     header .content-wrapper {
       width: 100%;
       justify-content: space-between;
+      flex-flow: row;
     }
   
     header figure {
-      width: 30%;
+      width: 50%;
     }
   
     header nav {
-      width: 20%;
+      width: 42%;
     }
   
     header nav ul {
@@ -584,6 +585,7 @@
     .header-divider {
       display: none;
     }
+
     /* Hero Area */
   
     .hero-area {
